@@ -1,0 +1,4 @@
+<resources>
+    <!-- All screens are built in code (see ui/Ui.kt); this theme only supplies the window defaults. -->
+    <style name="Theme.Lms" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

@@ -1,0 +1,18 @@
+# Optional Azure Pipelines definition: builds and tests the app whenever main changes.
+# Create a pipeline in Azure DevOps (Pipelines > New pipeline > Existing Azure Pipelines YAML file) to use it.
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: Gradle@3
+    displayName: Unit tests and debug build
+    inputs:
+      gradleWrapperFile: gradlew
+      tasks: testDebugUnitTest assembleDebug
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      javaHomeOption: JDKVersion
+      jdkVersionOption: '1.17'
