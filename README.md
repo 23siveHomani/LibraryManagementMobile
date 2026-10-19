@@ -65,3 +65,6 @@ app/src/test/  JUnit tests
 * The Google ID token is accepted on the device and is not verified by a server.
 * "Forgot password" is simulated (username plus registered email); there is no email service.
 * The librarian screen takes book codes by typing; camera barcode scanning is not included.
+ 
+## Demo video 
+https://youtu.be/rzTa-nEdiJM 
